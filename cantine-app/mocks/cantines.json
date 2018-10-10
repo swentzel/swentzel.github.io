@@ -1,20 +1,20 @@
 [
     {
-        "id":"1",
+        "id":1,
         "name": "Mensa Insel Schütt",
         "subtitle": "Studentenwerk Erlangen-Nürnberg",
         "city": "Nürnberg",
         "url": "http://www.werkswelt.de/data/uploads/gastronomie/slideshows/inselschuett-2016.jpg"
     },
     {
-        "id":"2",
+        "id":2,
         "name": "Mensateria Ohm",
         "subtitle": "Mensa an der TH Nürnberg (Ohm)",
         "city": "Nürnberg",
         "url": "http://www.werkswelt.de/data/uploads/gastronomie/slideshows/hg-mensa-ohm.jpg"
     },
     {
-        "id":"3",
+        "id":3,
         "name": "Casino 77",
         "subtitle": "NBR Betriebsrestaurant im Südwestpark",
         "city": "Nürnberg",
