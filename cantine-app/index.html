@@ -52,45 +52,109 @@
 				<!-- Part 1: serverless functions -->
 				<section>
 					<section>
-						<h2>serverless functions / FaaS</h2>
-						<p>Serverless Architectures</p>
+						<h2>Serverless Architectures</h2>
+						<p>Serverless architectures are application designs that incorporate third-party “Backend as a Service” (BaaS) services, and/or that include custom code run in managed, ephemeral containers on a “Functions as a Service” (FaaS) platform.</p>
+						<p><a href="https://martinfowler.com/articles/serverless.html target="_blank">https://martinfowler.com/articles/serverless.html</a>.</p>
+					</section>
+					<section>
+						<h2>BaaS: Backend as a Service</h2>
 						<ul>
-							<li>
-								BaaS: Backend as a Service
-								<li>Databases (Firebase, DynamoDB, ...)</li>
-								<li>Auth-Providers (Auth0, ...)</li>
-							</li>
-
-							<li>FaaS: Function as a Service</li>
+							<li>Databases (Firebase, DynamoDB, ...)</li>
+							<li>Auth-Providers (Auth0, ...)</li>
+							<li>...</li>
 						</ul>
+					</section>
+					<section>
+							<h2>FaaS: Function as a Service</h2>
+							<ul>
+								<li>Code runs in stateless containers</li>
+								<li>event-triggered</li>
+								<li>endless languages</li>
+								<li>endless providers</li>
+							</ul>
+					</section>
+					<section>
+						<h2>Example: AWS Lambda</h2>
 						
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
 					</section>
 				</section>
 
-				<!-- Part 2: Flutter.io -->
+				<!-- Part 2: serverless framework -->
 				<section>
-					<section>
-						<h2>Flutter.io App</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+					<section data-background-color="#000000">
+						<img src="./res/serverless-logo.png">
+						<p>The Serverless Framework is an open-source CLI for building and deploying <b>serverless applications.</b></p>
+						<a href="https://serverless.com/">https://serverless.com/</a>
 					</section>
-					<section>
+					<section data-background-color="#000000">
+						<h2>serverless framework (core)</h2>
+						<ul>
+							<li>Infrastructure as Code</li>
+							<li>development command line interface</li>
+							<li>(tries to be) cloud agnostic</li>
+							<li>... streaming logs</li>
+						</ul>
+					</section>
+					<section data-background-color="#000000">
+						<h2>cloud providers</h2>
+						<ul>
+							<li>Amazon AWS</li>
+							<li>Google Cloud Platform</li>
+							<li>Microsoft Azure</li>
+							<li>IBM OpenWhisk</li>
+							<li>Kubeless</li>
+							<li>spotinst</li>
+							<li>Cloudflare</li>
+							<li>fn</li>
+						</ul>
+					</section>
+					<section data-background-color="#000000">
+						<h2>languages (depending on provider)</h2>
+						<ul>
+							<li>NodeJS</li>
+							<li>Java</li>
+							<li>Swift</li>
+							<li>Python</li>
+							<li>PHP</li>
+							<li>Golang</li>
+							<li>C / C++</li>
+							<li>Rust, COBOL, ...</li>
+						</ul>
+					</section>
+					<section data-background-color="#000000">
+						<h2>Example: Cantine App</h2>
+					</section>
+				</section>
+
+				<!-- Part 3: Flutter.io -->
+				<section>
+					<section data-background-color="#ffffff">
+						<h2>Flutter.io App</h2>
+						<img src="./res/flutter-intro.jpg">
+					</section>
+					<section data-background-color="#ffffff">
+						<h2>Flutter.io is</h2>
+						<ul>
+							<li>... is Googles mobile app SDK</li>
+							<li>... for building iOS and Android (native) apps</li>
+							<li>... not web views</li>
+							<li>... combinable with native code</li>
+							<li></li>
+						</ul>
+					</section>
+					<section data-background-color="#000000">
+						<img src="./res/flutter-overview.png">
+					</section>
+					<section data-background-color="#ffffff">
+						<h2>Dart for Flutter apps</h2>
+						<ul>
+							<li>Dart is compiled AOT & JIT</li>
+							<li>easy to read: no need for JSX / XML (compared to React ...)</li>
+							<li>enables stateful hot reload for development</li>
+							<li>compiles to ARM, x86 / transpiles to JavaScript</li>
+						</ul>>
+					</section>
+					<section data-background-color="#ffffff">
 						<h2>Setup</h2>
 						<p>follow setup guide on flutter.io</p>
 						<ul>
@@ -98,28 +162,40 @@
 							<li>install & configure IDE, XCode, Android Studio, Emulator, ...</li>
 						</ul>
 					</section>
-					<section>
+					<section data-background-color="#ffffff">
 						<h2>cli</h2>
 						<p>create new app</p>
-						<pre><code class="hljs" data-trim contenteditable>
-							$ flutter create myapp
-							$ cd myapp
+						<pre><code class="hljs" data-trim>
+$ flutter create myapp
+$ cd myapp
 						</code></pre>
 						<p>run app</p>
-						<pre><code class="hljs" data-trim contenteditable>
-							$ flutter run
+						<pre><code class="hljs" data-trim>
+$ flutter run
 						</code></pre>
 						<p>hot reload</p>
-						<pre><code class="hljs" data-trim contenteditable>
-							cmd-s
+						<pre><code class="hljs" data-trim>
+cmd-s
 						</code></pre>
 						<p>flutter cli does reload the code of a live running app without restarting or losing app state.</p>
 					</section>
-
-					<section>
+					<section data-background-color="#ffffff">
 						<h2>Flutter directory layout</h2>
 						<img src="./res/flutter-directories.png">
 					</section>
+					<section data-background-color="#ffffff">
+						<h2>Everything is a widget</h2>
+						<pre><code class="hljs" data-trim>
+Center(child:
+	Column(children: [
+		Text('Hello, World!'),
+		Icon(Icons.star, color: Colors.green),
+	])
+)
+						</code></pre>
+						<img src="./res/flutter-helloworld.png">
+					</section>
+
 				</section>
 
 				<!-- Example of nested vertical slides -->
