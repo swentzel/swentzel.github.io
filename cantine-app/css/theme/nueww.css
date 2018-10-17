@@ -271,3 +271,5 @@ body {
 @media print {
   .backgrounds {
     background-color: #ffe600; } }
+
+.reveal section img { background:none; border:none; box-shadow:none; }
