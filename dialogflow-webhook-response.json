@@ -8,6 +8,9 @@
           },
         }
       ],
-    }
+      "sessionInfo" {
+			  "temperature": 25,
+		  },
+    },
   },
 }
