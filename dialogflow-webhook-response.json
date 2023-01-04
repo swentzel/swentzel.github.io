@@ -1,0 +1,13 @@
+{
+  "fulfillmentResponse": {
+    {
+      "messages": [
+        {
+          "text": {
+            "Hier kommt die Antwort her"
+          },
+        }
+      ],
+    }
+  },
+}
